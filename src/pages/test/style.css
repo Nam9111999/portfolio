@@ -1,0 +1,16 @@
+.test {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #250821;
+    flex-direction: row;
+}
+
+.more{
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    padding-top: 200vh;
+}

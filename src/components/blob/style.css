@@ -1,0 +1,17 @@
+.container {
+    height: 500px;
+    width: 500px;
+}
+
+.blob {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    z-index: 2;
+}
+
+.blob:nth-child(2) {
+    filter: blur(50px);
+    z-index: 1;
+}
+

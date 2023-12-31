@@ -1,0 +1,69 @@
+:root {
+  --tw-bg-opacity: 1;
+  --orange-900: #ff5a00;
+  --orange-100: rgb(228,110,0);
+  --black: rgb(0,0,0);
+  --white: rgb(255,255,255);
+  --yellow-lime: #ffc371;
+  --header-hight: 90px;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  margin: 0 !important;
+}
+
+a.nostyle:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
+a.nostyle:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
+.app {
+  background-color: var(--black);
+  color: var(--white);
+  min-height: 100vh;
+}
+
+header {
+  font-size: 2.1em;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  color: var(--orange-900);
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 4rem;
+  height: var(--header-hight);
+  align-items: center;
+}
+
+.header__navigation > * {
+  margin-left: 30px;
+  font-size: 2.1rem;
+}
+
+.header__icon img {
+  width: 90px;
+  height: 90px;
+}
