@@ -8,6 +8,7 @@
     padding: 0 100px;
     left: 0;
     right: 0;
+    padding-top: 120px;
 }
 
 .home__left {
@@ -16,8 +17,9 @@
 
 .home__right { 
     width: 50%;
-    padding-top: var(--header-hight);
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 

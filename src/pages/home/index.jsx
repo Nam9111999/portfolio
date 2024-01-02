@@ -1,6 +1,5 @@
 import Blob from "@components/blob";
 import "./style.css";
-import Nam from "@img/nam.png";
 
 function Home() {
   return (

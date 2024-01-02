@@ -1,27 +1,11 @@
-import Blob from '@components/blob'
 import './style.css'
-import TextHero from '../../components/textHero'
-import { useState, useEffect } from 'react';
+import NavBtn from '@components/navBtn'
 
 
 function Test() {
-    const [scrollY, setScrollY] = useState(0);
-
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-  
-    useEffect(() => {
-      window.addEventListener('scroll', handleScroll);
-  
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, []);
     return (
         <div className='test'>
-            <TextHero/>
-            <div className='more'>sdfs</div>
+            <NavBtn/>
         </div>
     )
 }

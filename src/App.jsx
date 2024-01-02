@@ -1,6 +1,7 @@
 import "./App.css";
 import logo from '@img/orange-logo.png'; 
 import Home from "@pages/home";
+import Test from "./pages/test";
 
 
 function App() {
@@ -11,9 +12,15 @@ function App() {
           <div className="header__icon">
             <img src={logo} alt="logo"/>
           </div>
-          <div className="header__navigation">
+          <nav className="header__navigation">
+          <a className="nostyle prevent-select" href="#home">
+              Home
+            </a>
             <a className="nostyle prevent-select" href="#about">
               About
+            </a>
+            <a className="nostyle prevent-select" href="#skill">
+              Skill
             </a>
             <a className="nostyle prevent-select" href="#projects">
               Projects
@@ -21,10 +28,10 @@ function App() {
             <a className="nostyle prevent-select" href="#contact">
               Contact
             </a>
-          </div>
+          </nav>
         </div>
       </header>
-      <Home />
+      <Test />
     </div>
   );
 }

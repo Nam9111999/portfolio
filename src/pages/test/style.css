@@ -7,10 +7,3 @@
     background: #250821;
     flex-direction: row;
 }
-
-.more{
-    min-height: 100vh;
-    display: flex;
-    position: relative;
-    padding-top: 200vh;
-}
