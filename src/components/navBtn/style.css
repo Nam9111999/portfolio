@@ -3,21 +3,23 @@
     padding: 10px 22px;
     border-radius: 10px;
     color: var(--orange-900);
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 500;
     transition: transform .2s ease, color .4s, background-color .4s;
     text-decoration: none;
-    text-transform: uppercase;
-}
-
-.nav-btn:hover {
     color: black;
     background-color: var(--orange-900);
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 
+.nav-btn:hover {
+    color: white;
+    background-color: var(--orange-900);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
 .nav-btn:active {
-    transform: scale(0.96);
+    transform: scale(2) ;
 }
 
 .nav-btn::before,
@@ -27,7 +29,7 @@
     position: absolute;
     transform: translateX(-50%);
     height: 100%;
-    width: 150%;
+    width: 130%;
     background-repeat: no-repeat;
 }
 

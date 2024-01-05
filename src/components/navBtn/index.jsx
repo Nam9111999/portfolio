@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './style.css'
 
-function NavBtn() {
+function NavBtn(props) {
 
     const [isButtonClicked, setButtonClicked] = useState(false);
 
@@ -19,8 +19,8 @@ function NavBtn() {
         buttonClasses += ' animate'; // Add class when the button is clicked
     }
     return (
-        <a onClick={handleClick} href='#' className={buttonClasses}>
-           Click me
+        <a onClick={handleClick} href={props.href} className={buttonClasses}>
+           {props.text}
         </a>
     )
 }

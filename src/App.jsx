@@ -1,14 +1,26 @@
 import "./App.css";
 import logo from '@img/orange-logo.png'; 
 import Home from "@pages/home";
-import Test from "./pages/test";
+import NavBtn from "./components/navBtn";
+import { useState } from "react";
 
 
 function App() {
+  const [scroll,setScroll] = useState(false);
+  const changeColor = ()=> {
+    if(window.scrollY >= 90) {
+      setScroll(true)
+    } else {
+      setScroll(false)
+    }
+  }
+
+  window.addEventListener('scroll',changeColor)
+
   return (
     <div className="app">
       <header className="app__header">
-        <div className="header__container">
+        <div className={scroll ? "header__container scrolled":"header__container"}>
           <div className="header__icon">
             <img src={logo} alt="logo"/>
           </div>
@@ -29,9 +41,12 @@ function App() {
               Contact
             </a>
           </nav>
+          <div>
+            <NavBtn text="Dowload CV"/>
+          </div>
         </div>
       </header>
-      <Test />
+      <Home />
     </div>
   );
 }
